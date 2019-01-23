@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>超人网</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <style>
+        .keepRight{
+            float:right;
+            padding:10px;
+        }
+        #head{
+            background-color:#0394cb;
+            height: 40px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="head">
+    <a href="/logout" class="keepRight">注销</a>
+    <span th:text="'登录用户：' + ${name}" class="keepRight"></span>
+</div>
+<div>
+    <div><a href="/index2.html">AngularJS为模板的页面</a></div>
+    <div><a href="/hello">Thymeleaf为模板的页面</a></div>
+</div>
+</body>
+</html>

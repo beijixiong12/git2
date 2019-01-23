@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>AGE</th>
+        <th>mail</th>
+    </tr>
+    <tr th:each="emp : ${empList}">
+        <td th:text="${emp.id}">1</td>
+        <td th:text="${emp.getName()}">海</td>
+        <td th:text="${emp.getAge()}">18</td>
+        <td th:text="${emp.getEmail()}">18</td>
+    </tr>
+</table>
+</body>
+</html>

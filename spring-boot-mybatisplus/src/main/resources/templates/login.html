@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .center-in-center{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #body{
+        background : url("image/timg.jpg") no-repeat;
+        background-size:cover;
+    }
+</style>
+<body id="body">
+    <div class="center-in-center">
+        <form action="http://localhost:808/loginPost" method="post">
+            <div>账号：<input name="account"/></div>
+            <div>密码：<input name="password"/></div>
+            <div> <input type="submit"/> <a href="/registered">注册</a></div>
+        </form>
+    </div>
+</body>
+</html>
